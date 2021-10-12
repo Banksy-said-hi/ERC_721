@@ -1,37 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Rahimjackass 
-OpenZeppelin
-/
-openzeppelin-contracts
-Public
-551
-12.7k
-6.4k
-Code
-Issues
-105
-Pull requests
-12
-Actions
-Security
-2
-Insights
-openzeppelin-contracts/contracts/token/ERC721/ERC721.sol
-@Amxx
-Amxx Add an internal _setApprovalForAll function (721 & 1155) (#2834)
-…
-Latest commit caba6b9 6 days ago
- History
- 25 contributors
-@nventuro@frangio@Amxx@julianmrodri@spalladino@shrugs@Flash-Git@balajipachai@MentatX@tinchoabbate@zemse@pemulis
-423 lines (371 sloc)  13.2 KB
-   
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
@@ -455,15 +421,3 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
         uint256 tokenId
     ) internal virtual {}
 }
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
