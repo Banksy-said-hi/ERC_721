@@ -6,13 +6,17 @@ contract test is ERC721 {
     
     constructor() ERC721("Sina NFTs", "GOLD") {}
     
-    uint public counter;
+    uint public tokenIds;
     
-    function mint(uint _number) public returns(uint) {
-        for (uint i=counter + 1; counter <= counter + _number; i++) {
-            _safeMint(msg.sender, i);
+    function mint_once() public {
+        _mint(msg.sender, tokenIds);
+        tokenIds += 1;
+    }
+    
+    function mint_twice() public {
+        for (uint i=tokenIds; i < tokenIds+2; i++) {
+            _mint(msg.sender, i);
         }
-        counter += _number + 1;
-        return counter;
+        tokenIds += 2;
     }
 }
